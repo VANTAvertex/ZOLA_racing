@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Race</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Écran de préparation -->
+        <div id="prepare-screen">
+            <h1 id="level-title">🏎️ Click Race</h1>
+            <p id="level-description">Prépare-toi à cliquer !</p>
+            <div id="countdown">3</div>
+            <button id="start-btn">Commencer</button>
+        </div>
+
+        <!-- Écran de jeu -->
+        <div id="game-screen" style="display: none;">
+            <div id="game-header">
+                <div id="timer">⏱️ <span id="time-left">30</span>s</div>
+                <div id="score-display">Score: <span id="current-score">0</span></div>
+            </div>
+            
+            <div id="click-area">
+                <button id="click-button">
+                    <span id="button-emoji">🚗</span>
+                    <span>CLIC !</span>
+                </button>
+            </div>
+            
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Écran de fin -->
+        <div id="finish-screen" style="display: none;">
+            <h2>🎉 Partie terminée !</h2>
+            <div id="final-stats">
+                <p>Score final: <span id="final-score">0</span></p>
+                <p>Temps: <span id="final-time">0</span>s</p>
+                <p>Clics/seconde: <span id="cps">0</span></p>
+            </div>
+            <button id="send-score-btn">Envoyer le score</button>
+            <button id="play-again-btn">Rejouer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
