@@ -11,19 +11,19 @@ WEBAPP_URL = os.getenv("WEBAPP_URL")
 # Configuration du jeu
 GAME_LEVELS = {
     "tesla": {
-        "name": "🚗 Tesla (Facile)",
+        "name": "🚗 Tesla VS Zola 🐆 (Facile)",
         "time_limit": 30,
         "target_score": 50,
         "emoji": "🚗"
     },
     "porsche": {
-        "name": "🏎️ Porsche (Moyen)", 
+        "name": "🏎️ Porsche VS Zola 🐆 (Moyen)", 
         "time_limit": 20,
         "target_score": 100,
         "emoji": "🏎️"
     },
     "bugatti": {
-        "name": "🏁 Bugatti (Difficile)",
+        "name": "🏁 Bugatti VS Zola 🐆 (Difficile)",
         "time_limit": 15,
         "target_score": 150,
         "emoji": "🏁"
@@ -33,7 +33,7 @@ GAME_LEVELS = {
 # Messages du bot
 MESSAGES = {
     "welcome": """
-🏎️ **Bienvenue dans Click Race !**
+🏎️ **Bienvenue dans Zola Click Race !**
 
 Un jeu de rapidité où tu dois cliquer le plus vite possible !
 
