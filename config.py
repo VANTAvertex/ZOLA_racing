@@ -11,19 +11,19 @@ WEBAPP_URL = os.getenv("WEBAPP_URL")
 # Configuration du jeu
 GAME_LEVELS = {
     "tesla": {
-        "name": "🚗 Tesla VS Zola 🐆 (Facile)",
+        "name": "🚗 Tesla VS Zola 🐆 (Easy)",
         "time_limit": 30,
         "target_score": 50,
         "emoji": "🚗"
     },
     "porsche": {
-        "name": "🏎️ Porsche VS Zola 🐆 (Moyen)", 
+        "name": "🏎️ Porsche VS Zola 🐆 (Hard)", 
         "time_limit": 20,
         "target_score": 100,
         "emoji": "🏎️"
     },
     "bugatti": {
-        "name": "🏁 Bugatti VS Zola 🐆 (Difficile)",
+        "name": "🏁 Bugatti VS Zola 🐆 (Legend)",
         "time_limit": 15,
         "target_score": 150,
         "emoji": "🏁"
@@ -33,17 +33,17 @@ GAME_LEVELS = {
 # Messages du bot
 MESSAGES = {
     "welcome": """
-🏎️ **Bienvenue dans Zola Click Race !**
+🏎️ **Welcome in Zola Click Race !**
 
-Un jeu de rapidité où tu dois cliquer le plus vite possible !
+A speed game where you have to click as quickly as possible !
 
-Choisis ton niveau :
-• Tesla (Facile) - 30 secondes
-• Porsche (Moyen) - 20 secondes  
-• Bugatti (Difficile) - 15 secondes
+Choose your level :
+• Tesla (Easy) - 30 seconds
+• Porsche (Hard) - 20 seconds  
+• Bugatti (Legend) - 15 seconds
 
 Tape /play pour commencer !
 """,
-    "choose_level": "🏁 Choisis ton niveau de difficulté :",
+    "choose_level": "🏁 Choose your speed level :",
     "game_finished": "🎉 Partie terminée ! Score : {score} points en {level}"
 }
